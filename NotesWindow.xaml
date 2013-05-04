@@ -1,0 +1,14 @@
+﻿<Window x:Class="CardCollection.NotesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notes" Height="228" Width="373" Name="notes">
+    <Grid>
+        <TextBox Height="124" HorizontalAlignment="Left" Margin="12,12,0,0" Name="tbNotes" VerticalAlignment="Top" Width="327" TextWrapping="Wrap" AcceptsReturn="True">
+            <TextBox.Text>
+                <Binding UpdateSourceTrigger="PropertyChanged"></Binding>
+            </TextBox.Text>
+        </TextBox>
+        <Button Content="Add Notes" Height="23" HorizontalAlignment="Left" Margin="12,154,0,0" Name="btnAddNotes" VerticalAlignment="Top" Width="100" Click="btnAddNotes_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="237,154,0,0" Name="btnCancelNotes" VerticalAlignment="Top" Width="100" Click="btnCancelNotes_Click" />
+    </Grid>
+</Window>
